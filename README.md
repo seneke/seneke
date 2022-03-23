@@ -1,81 +1,153 @@
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
+body												
+{
+	background-color: #191d21;             
+	font-family: 'League Gothic', sans-serif;
+	font-size: 30px;
+	margin: 0;
+}
 
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<title>Hotel Paradise</title>
-	
-	<meta name="description" content="Wybierz pokój który Cię interesuje." />
-	
-	<meta name="keywords" content="zamów, pokój, wakacje, wypoczynek, plaża, morze, dom, wczasy" />
-	
-	<link href="style.css" rel="stylesheet" type="text/css" />	
-	<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-	
-	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
-	
-</head>
+.nav
+{
+	width: 80%;
+	margin: 0 auto;
+}
 
-<body>
+header
+{
+	background: #55D6AA;
+}
+
+header::after
+{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo
+{
+	float: left;
+	padding: 10px 0;
+}
+
+nav
+{
+	float: right;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
 	
-		<header>
-			
-			<div class="nav">
-			
-				<img src="img/logo.png" alt="logo" class="logo">
-				
-				<nav>
-					<ul>	
-						<li><a href="#">Strona Główna</a></li>
-						<li><a href="#">Kontakt</a></li>
-						<li><a href="#">O Nas</a></li>
-						<li><a href="#">Rezerwacja</a></li>
-					</ul>
-				</nav>
-			</div>
-		
-		</header>
-		
-		<main>
-				
-			<article>
-		
-				<div class="container">
-		
-					<div class="postcard1">
-				
-						<div class="photo1"> 
-							<a href="#"><img src="img/ppok.png" alt="Loft"></a>
-						</div>
-						<p>Loft Room</p>
-					
-					</div>
-					
-					<div class="postcardmulti1">
-						<div id="multi1">
-							<a href="#"><img id="zdj1" weight="100px" height="50px" src="img/ppok.png" alt="loft"></a>
-						</div>
-						
-						<div id="multi2">
-							<a href="#"><img id="zdj2" weight="100px" height="50px" src="img/dpok.png" alt="light"></a>
-						</div>
-						
-						<div id="multi3">
-							<a href="#"><img id="zdj3" weight="100px" height="50px" src="img/tpok.png" alt="special"></a>
-						</div>
-						
-						<div id="multi4">
-							<a href="#"><img id="zdj4" weight="100px" height="50px" src="img/cpok.png" alt="modern"></a>
-						</div>
-						
-						<div style="clear: both;"></div>
-						
-						<div id="multi5">
-							<img id="zdj" src="img/dpokb.png">
-						</div>
-							
-						<script src="main.js"></script>
-						
-					</div>
+	position: relative;
+}
+
+nav a
+{
+	color: #444;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+nav a:hover
+{
+	color: #444;
+}
+
+nav a::before
+{
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before
+{
+	width: 100%;
+}
+
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	width: 1100px;
+	text-align: justify;
+}
+
+.postcard1
+{
+	width: 450px;
+	text-align: center;
+	padding: 5px;
+	margin-right: 100px;
+	float: left;
+}
+
+.postcard1 p
+{
+	padding: 5px;
+	margin-top: 10px;
+	color: #ffffff;	
+}
+
+.postcardmulti1
+{
+	width: 450px;
+	padding: 5px;
+	float: left;
+}
+
+#multi1
+{
+	float: left;
+	width: 112px;
+	height: 50px;
+}
+
+#multi2
+{
+	float: left;
+	width: 112px;
+	height: 50px;
+}
+
+#multi3
+{
+	float: right;
+	width: 112px;
+	height: 50px;
+}
+
+#multi4
+{
+	float: right;
+	width: 112px;
+	height: 50px;
+}
+
+#multi5
+{
+	float: right;
+	width: 440px;
+	height: 200px;
+	padding: 20px;
+}
